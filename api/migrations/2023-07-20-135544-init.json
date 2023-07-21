@@ -1,0 +1,496 @@
+{
+	"formatVersion": 4,
+	"modifications": [
+		{
+			"modification": "createEnum",
+			"enumName": "UserRole",
+			"values": [
+				"admin",
+				"stageManager"
+			]
+		},
+		{
+			"modification": "createEntity",
+			"entity": {
+				"name": "Festival",
+				"unique": {},
+				"indexes": {},
+				"primary": "id",
+				"primaryColumn": "id",
+				"tableName": "festival",
+				"eventLog": {
+					"enabled": true
+				},
+				"fields": {
+					"id": {
+						"name": "id",
+						"columnName": "id",
+						"type": "Uuid",
+						"columnType": "uuid",
+						"nullable": false
+					}
+				}
+			}
+		},
+		{
+			"modification": "createEntity",
+			"entity": {
+				"name": "Performance",
+				"unique": {},
+				"indexes": {},
+				"primary": "id",
+				"primaryColumn": "id",
+				"tableName": "performance",
+				"eventLog": {
+					"enabled": true
+				},
+				"fields": {
+					"id": {
+						"name": "id",
+						"columnName": "id",
+						"type": "Uuid",
+						"columnType": "uuid",
+						"nullable": false
+					}
+				}
+			}
+		},
+		{
+			"modification": "createEntity",
+			"entity": {
+				"name": "Stage",
+				"unique": {},
+				"indexes": {},
+				"primary": "id",
+				"primaryColumn": "id",
+				"tableName": "stage",
+				"eventLog": {
+					"enabled": true
+				},
+				"fields": {
+					"id": {
+						"name": "id",
+						"columnName": "id",
+						"type": "Uuid",
+						"columnType": "uuid",
+						"nullable": false
+					}
+				}
+			}
+		},
+		{
+			"modification": "createEntity",
+			"entity": {
+				"name": "Equipment",
+				"unique": {},
+				"indexes": {},
+				"primary": "id",
+				"primaryColumn": "id",
+				"tableName": "equipment",
+				"eventLog": {
+					"enabled": true
+				},
+				"fields": {
+					"id": {
+						"name": "id",
+						"columnName": "id",
+						"type": "Uuid",
+						"columnType": "uuid",
+						"nullable": false
+					}
+				}
+			}
+		},
+		{
+			"modification": "createEntity",
+			"entity": {
+				"name": "User",
+				"unique": {},
+				"indexes": {},
+				"primary": "id",
+				"primaryColumn": "id",
+				"tableName": "user",
+				"eventLog": {
+					"enabled": true
+				},
+				"fields": {
+					"id": {
+						"name": "id",
+						"columnName": "id",
+						"type": "Uuid",
+						"columnType": "uuid",
+						"nullable": false
+					}
+				}
+			}
+		},
+		{
+			"modification": "createColumn",
+			"entityName": "Festival",
+			"field": {
+				"name": "name",
+				"columnName": "name",
+				"type": "String",
+				"nullable": true,
+				"columnType": "text"
+			}
+		},
+		{
+			"modification": "createColumn",
+			"entityName": "Festival",
+			"field": {
+				"name": "startDate",
+				"columnName": "start_date",
+				"type": "Date",
+				"nullable": true,
+				"columnType": "date"
+			}
+		},
+		{
+			"modification": "createColumn",
+			"entityName": "Festival",
+			"field": {
+				"name": "endDate",
+				"columnName": "end_date",
+				"type": "Date",
+				"nullable": true,
+				"columnType": "date"
+			}
+		},
+		{
+			"modification": "createColumn",
+			"entityName": "Festival",
+			"field": {
+				"name": "venue",
+				"columnName": "venue",
+				"type": "String",
+				"nullable": true,
+				"columnType": "text"
+			}
+		},
+		{
+			"modification": "createColumn",
+			"entityName": "Performance",
+			"field": {
+				"name": "name",
+				"columnName": "name",
+				"type": "String",
+				"nullable": true,
+				"columnType": "text"
+			}
+		},
+		{
+			"modification": "createColumn",
+			"entityName": "Performance",
+			"field": {
+				"name": "startTime",
+				"columnName": "start_time",
+				"type": "DateTime",
+				"nullable": true,
+				"columnType": "timestamptz"
+			}
+		},
+		{
+			"modification": "createColumn",
+			"entityName": "Performance",
+			"field": {
+				"name": "endTime",
+				"columnName": "end_time",
+				"type": "DateTime",
+				"nullable": true,
+				"columnType": "timestamptz"
+			}
+		},
+		{
+			"modification": "createColumn",
+			"entityName": "Stage",
+			"field": {
+				"name": "name",
+				"columnName": "name",
+				"type": "String",
+				"nullable": true,
+				"columnType": "text"
+			}
+		},
+		{
+			"modification": "createColumn",
+			"entityName": "Equipment",
+			"field": {
+				"name": "name",
+				"columnName": "name",
+				"type": "String",
+				"nullable": true,
+				"columnType": "text"
+			}
+		},
+		{
+			"modification": "createColumn",
+			"entityName": "Equipment",
+			"field": {
+				"name": "quantity",
+				"columnName": "quantity",
+				"type": "Integer",
+				"nullable": true,
+				"columnType": "integer"
+			}
+		},
+		{
+			"modification": "createColumn",
+			"entityName": "User",
+			"field": {
+				"name": "personId",
+				"columnName": "person_id",
+				"type": "Uuid",
+				"nullable": true,
+				"columnType": "uuid"
+			}
+		},
+		{
+			"modification": "createColumn",
+			"entityName": "User",
+			"field": {
+				"name": "name",
+				"columnName": "name",
+				"type": "String",
+				"nullable": true,
+				"columnType": "text"
+			}
+		},
+		{
+			"modification": "createColumn",
+			"entityName": "User",
+			"field": {
+				"name": "email",
+				"columnName": "email",
+				"type": "String",
+				"nullable": true,
+				"columnType": "text"
+			}
+		},
+		{
+			"modification": "createColumn",
+			"entityName": "User",
+			"field": {
+				"name": "role",
+				"columnName": "role",
+				"type": "Enum",
+				"nullable": true,
+				"columnType": "UserRole"
+			}
+		},
+		{
+			"modification": "createRelation",
+			"entityName": "Performance",
+			"owningSide": {
+				"type": "ManyHasOne",
+				"name": "stage",
+				"target": "Stage",
+				"inversedBy": "performances",
+				"joiningColumn": {
+					"columnName": "stage_id",
+					"onDelete": "restrict"
+				},
+				"nullable": true
+			},
+			"inverseSide": {
+				"type": "OneHasMany",
+				"name": "performances",
+				"target": "Performance",
+				"ownedBy": "stage"
+			}
+		},
+		{
+			"modification": "createRelation",
+			"entityName": "Performance",
+			"owningSide": {
+				"type": "ManyHasOne",
+				"name": "festival",
+				"target": "Festival",
+				"inversedBy": "performances",
+				"joiningColumn": {
+					"columnName": "festival_id",
+					"onDelete": "restrict"
+				},
+				"nullable": true
+			},
+			"inverseSide": {
+				"type": "OneHasMany",
+				"name": "performances",
+				"target": "Performance",
+				"ownedBy": "festival"
+			}
+		},
+		{
+			"modification": "createRelation",
+			"entityName": "Equipment",
+			"owningSide": {
+				"type": "ManyHasOne",
+				"name": "stage",
+				"target": "Stage",
+				"inversedBy": "equipment",
+				"joiningColumn": {
+					"columnName": "stage_id",
+					"onDelete": "restrict"
+				},
+				"nullable": true
+			},
+			"inverseSide": {
+				"type": "OneHasMany",
+				"name": "equipment",
+				"target": "Equipment",
+				"ownedBy": "stage"
+			}
+		},
+		{
+			"modification": "createRelation",
+			"entityName": "Equipment",
+			"owningSide": {
+				"type": "ManyHasOne",
+				"name": "performance",
+				"target": "Performance",
+				"inversedBy": "equipment",
+				"joiningColumn": {
+					"columnName": "performance_id",
+					"onDelete": "restrict"
+				},
+				"nullable": true
+			},
+			"inverseSide": {
+				"type": "OneHasMany",
+				"name": "equipment",
+				"target": "Equipment",
+				"ownedBy": "performance"
+			}
+		},
+		{
+			"modification": "createUniqueConstraint",
+			"entityName": "User",
+			"unique": {
+				"fields": [
+					"personId",
+					"email"
+				],
+				"name": "unique_User_personId_email"
+			}
+		},
+		{
+			"modification": "patchAclSchema",
+			"patch": [
+				{
+					"op": "add",
+					"path": "/roles/stageManager",
+					"value": {
+						"variables": {
+							"personId": {
+								"type": "predefined",
+								"value": "personID"
+							}
+						},
+						"stages": "*",
+						"entities": {
+							"Performance": {
+								"predicates": {},
+								"operations": {
+									"read": {
+										"name": true,
+										"startTime": true,
+										"endTime": true,
+										"stage": true,
+										"festival": true,
+										"equipment": true
+									},
+									"update": {
+										"name": true,
+										"startTime": true,
+										"endTime": true,
+										"stage": true,
+										"festival": true,
+										"equipment": true
+									},
+									"create": {
+										"name": true,
+										"startTime": true,
+										"endTime": true,
+										"stage": true,
+										"festival": true,
+										"equipment": true
+									}
+								}
+							},
+							"Stage": {
+								"predicates": {},
+								"operations": {
+									"read": {
+										"name": true,
+										"equipment": true,
+										"performances": true
+									},
+									"update": {
+										"name": true,
+										"equipment": true,
+										"performances": true
+									},
+									"create": {
+										"name": true,
+										"equipment": true,
+										"performances": true
+									}
+								}
+							},
+							"Equipment": {
+								"predicates": {},
+								"operations": {
+									"read": {
+										"name": true,
+										"quantity": true,
+										"stage": true,
+										"performance": true
+									},
+									"update": {
+										"name": true,
+										"quantity": true,
+										"stage": true,
+										"performance": true
+									},
+									"create": {
+										"name": true,
+										"quantity": true,
+										"stage": true,
+										"performance": true
+									}
+								}
+							},
+							"User": {
+								"predicates": {
+									"predicateUserstageManager ": {
+										"personId": "personId"
+									}
+								},
+								"operations": {
+									"read": {
+										"personId": "predicateUserstageManager ",
+										"name": "predicateUserstageManager ",
+										"email": "predicateUserstageManager ",
+										"role": "predicateUserstageManager "
+									},
+									"update": {
+										"personId": "predicateUserstageManager ",
+										"name": "predicateUserstageManager ",
+										"email": "predicateUserstageManager ",
+										"role": "predicateUserstageManager "
+									}
+								}
+							}
+						},
+						"s3": {
+							"**": {
+								"upload": true,
+								"read": true
+							}
+						}
+					}
+				}
+			]
+		}
+	]
+}
